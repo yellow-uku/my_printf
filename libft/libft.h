@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: pkayleen <pkayleen@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/03 14:38:47 by pkayleen          #+#    #+#             */
-/*   Updated: 2021/03/21 16:16:47 by pkayleen         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -62,10 +50,10 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 t_list				*ft_lstnew(void *content);
-void				ft_lstadd_front(t_list **lst, t_list *new);
+void				ft_lstadd_front(t_list **lst, t_list *new_node);
 int					ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
-void				ft_lstadd_back(t_list **lst, t_list *new);
+void				ft_lstadd_back(t_list **lst, t_list *new_node);
 void				ft_lstdelone(t_list *lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 void				ft_lstdelone(t_list *lst, void (*del)(void*));

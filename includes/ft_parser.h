@@ -1,19 +1,9 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_parser.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: pkayleen <pkayleen@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/20 19:45:55 by pkayleen          #+#    #+#             */
-/*   Updated: 2021/03/21 16:13:51 by pkayleen         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FT_PARSER_H
 # define FT_PARSER_H
 
 # include <stdarg.h>
+# include "ft_printf.h"
+
 # define ALL_SPECIFIERS "cspdiouxX-.*0123456789"
 
 typedef struct	s_struct
